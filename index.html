@@ -1,0 +1,107 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>HTML5 Day Conference</title>
+
+<header>
+    <img src="images/logo.png" width="50%" alt="HTML5 Conference Logo">
+    <h1>HTML5 Day Conference</h1>
+    <p>Petra, Jordan. November, 4th 2020</p>
+</header>
+
+<!--this code has been adjusted/changed-->
+<!--example code for a basic HTML5 website and/or web apps-->
+
+<main>
+    
+      <figure>
+        <!--  <img src="images/animation.gif"
+               alt="Images animation from the Conference"
+               width="90%">  -->
+             <video loop muted playsinline webkit-playsinline autoplay width="90%" src="resources/animation.mp4">
+            </video>   
+             <figcaption><i>Images from the previous editions of the conference</i></figcaption>  
+      </figure>
+
+    <h2>The conference in images</h2>
+
+    <ul>
+        <li>
+            <img src="images/event1300p.jpg"
+                 srcset="images/event1300p.jpg 1x, images/event1600p.jpg 2x, images/event1900p.jpg 3x",
+                 alt="Event picture"
+                 width="300" height="82">
+        </li>
+
+        <li>
+            <img src="images/event2300p.jpg"
+                 srcset="images/event2300p.jpg 1x, images/event2600p.jpg 2x, images/event2900p.jpg 3x",
+                 alt="Event picture"
+                 width="300" height="225">
+        
+        </li>
+
+        <li>
+            <img src="images/event3300p.jpg"
+                 srcset="images/event3300p.jpg 1x, images/event3600p.jpg 2x, images/event3900p.jpg 3x",
+                 alt="Event picture"
+                 width="300" height="183">
+        </li>
+   </ul>
+
+    <h2>Listen to the Welcome Message</h2>
+    <audio controls preload="metadata" src="resources/welcome.mp3" width="50%"
+          height="50%"></audio>
+
+    <h2>About Petra</h2>
+
+    <video controls poster="images/event3300p.jpg" width="100%">
+         <source  src="resources/movie.mp4" type="video/mp4"> 
+         <source  src="resources/mivie.webm" type="video/webm">
+    </video>
+
+    <h2>Schedule</h2>
+
+    <table>
+          <caption>Conference Schedule by Room</caption>
+          <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Conference Name</th>
+                    <th>Room Name</th>
+                </tr>
+          </thead>
+               <tr>
+                  <td>9am</td>
+                  <td>Keynote</td>
+                  <td>Indiana Jones</td>
+               </tr>
+               <tr>
+                  <td>12pm</td>
+                  <td>Lunch</td>
+                  <td>Restaurant</td>
+              </tr>
+               <tr>
+                  <td>2pm</td>
+                  <td>CSS Training</td>
+                  <td>Indiana Jones</td>
+               </tr>
+               <tr>
+                  <td rowspan="2">4pm</td>
+                  <td rowspan="2">Javascript Training</td>
+                  <td>Indiana Jones</td>
+              </tr>
+              <tr>
+                
+                <td>Javascript Training</td>
+                <td>Harrison Ford</td>
+            </tr>
+    </table>
+
+</main>
+
+<footer>
+    <p>If you have any questions, contact us on social media.</p>
+    <a href="https://github.com/Harlon96">Harlon96</a>
+    <a href="tel:+4077029582">Call Me @</a>
+</footer>
