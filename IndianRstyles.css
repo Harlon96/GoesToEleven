@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: linear-gradient(to bottom, white 0%, white 100%)
+}
+
+header {
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    position: fixed; /* keeps header at the top at all times.. youy can use absolute, sticky, or bottom too*/
+}
+
+header img {
+    float: right;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #CCC;
+    user-select: none;  /* this is so the user can't select anything on the menu*/
+    -webkit-user-select: none; /* this is so the user can't select anything on the menu ..older version*/
+}
+
+main {
+    background-color: #CCC;
+    padding: 15px;
+    padding-top: 120px;
+}
+
+h3 {
+    color: darkred;
+    margin-top: 0;
+    padding: 5px;
+    border-bottom: 2.5px dashed darkred;
+    position: sticky;  /* this allows the header to stay in one spot*/
+    position: -webkit sticky; /* this allows the header to stay in one spot*/
+    top: 120;
+}
+
+h3::selection {
+     background-color: green;   /*doesn't work on all browsers .. desktop chrome it does*/
+     color: white;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.meal {
+    margin-top: 15px;
+}
+
+.meal h4 {
+    color: green;
+    font-size: 1.3em;
+    margin: 5px 0;
+}
+
+.meal section {
+    color: black;
+    display: flex;
+}
+
+.meal .description {
+    font-size: 0.9em;
+    color: #444;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.meal .price {
+    width: 100px;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: right;
+    vertical-align: middle;
+    margin: 0;
+}
+
+footer {
+    padding: 0 15px;
+    text-align: center;
+    font-size: small;
+}
+
+a {
+    padding: 15px;
+    /*-webkit-tap-highlight-color: orange;*/
+    /*-webkit-touch-callout: none;*/
+}
