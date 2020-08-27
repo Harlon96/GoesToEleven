@@ -1,0 +1,108 @@
+<!doctype html>
+<title>Drink Club Winery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="styles.css">
+
+
+
+<form action="https://formspree.io/mrgywbaw" method="POST">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+     <label for="name">Name</label>
+     <input autofocus autocomplete placeholder="full name" required type="text" id="name" name="name">
+
+     <label for="phone ">Phone Number</label>
+     <input pattern="[0-9]*" required autocomplete placeholder="tel" type="tel" id="phone" name="phone">
+
+     <label for="email">Email</label>
+     <input required autocomplete placeholder="email" type="email" id="email" name="email">
+
+     <label for="birthday">Birth Date</label>
+     <input type="date" id="birth date" name="birthday">
+
+    </fieldset>
+     
+    <fieldset>
+         <legend>Wine Order</legend>
+
+         <label for="merlot">How many # Merlot?</label>
+         <input type="number" min="0" max="100" pattern="[0-9]*" id="merlot" name="merlot">
+
+         <label for="champagne">How many # Champagne?</label>
+         <input type="number" min="0" max="100" pattern="[0-9]*" id="champagne" name="champagne">
+
+         <label for="malbec">How many # Malbec?</label>
+         <input type="number" min="0" max="100" pattern="[0-9]*" id="malbec" name="malbec">
+
+
+         <section class="nowrap">
+           <input type="checkbox" value="Gift" id="gift" name="gift"> 
+           <lable for="gift">This is a gift</label>  
+         </section>     
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Shipping Details</legend>
+
+          <section class="nowrap">
+            <input type="radio" value="Standard" id="standard" name="shipping-type"> 
+            <lable for="standard">Standard Shipping ($5)</label> 
+          </section>     
+
+          <section class="nowrap">
+            <input type="radio" value="DHL" id="dhl" name="shipping-type"> 
+            <lable for="dhl">DHL Shipping ($25)</label> 
+          </section>
+
+        <label for="streetnumber">Street Number</label>
+        <input autocomplete placeholder="street number" type="number" pattern="[0-9]*" id="streetnumber" name="streetnumber">
+
+        <label for="streetname">Street Name</label>
+        <input autocomplete placeholder="street name" type="text" id="streetname" name="streetname">
+
+        <label for="city">City and State/Provence</label>
+        <input autocomplete placeholder="city" type="text" id="city" name="city">
+        
+        <label for="country">Country</label>
+        <select type="text" id="country" name="country">
+              <option>Canada</option>
+              <option>France</option>
+              <option>Germany</option>
+              <option>Iceland</option>
+              <option>Ireland</option>
+              <option>Spain</option>
+              <option>Mexico</option>
+              <option>United Kingdom</option>
+              <option>United States</option>
+
+        </select>
+        <label for="time">Delivery or pick up time</label>
+        <select type="time" id="time" name="time" multiple>
+                <option>8amto9am</option>
+                <option>10amto11am</option>
+                <option>12pmto1pm</option>
+                <option>2pmto3pm</option>
+                <option>4pmto5pm</option>
+                <option>Other</option>
+        </select>
+        
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments">Your comments here...</textarea>
+
+    </fieldset>
+
+
+
+     <input type="submit" value="Order">
+
+
+    
+
+</form>
