@@ -1,140 +1,53 @@
-/*without flexbox*/
-/* comment in CSS : use CSS before header is better for the program*/
-
-/*Child Selector*/
-body>header {
-    background-color: yellow; 
-    margin:  0px;
-    padding: 30px;
-    }
-
-article {
-    clear: left;  /*the antifloat*/
+label, input {
+    display: block;
+}
+input {
+    width: 85%;
+    padding: 10px;
+    margin: 15px;
 }
 
-/*ID Selector*/
-#mainarticle {
-     margin: 20px;
+input:required {
+    border-right: 10px solid gray;
 }
 
-/*ID Selector*/
-#subtitle {      /*must place id="subtitle in the correct spot"*/
-    font-size: larger;
-    margin-top: 0;
+input:optional {
+    border-right: 10px solid silver;
 }
 
-#logo {
-    float: right;
-    vertical-align: top;
-    margin-right: 0;
-    margin-left: 5px;
-
+input:focus:invalid {
+    border-left: 10px solid red;
 }
 
-#games {
-    float: right;
-    vertical-align: top;
-    margin-right: 0;
-    margin-left: 5px;
-
+input:focus:valid {
+    border-left: 10px solid green;
 }
 
-/*Element Selector*/
-
-ul, ol {
-     list-style: none; /* takes away margins and padding*/
-     padding-left: 0;
-     display: flex;
+.nowrap label, .nowrap input {
+    display: inline;
+    width: auto;
 }
 
-
-body {     /*allows there not to be any white/color in the area of the margin and/or padding area*/
-    margin: 0;
-    padding: 0;
-    background-color: cyan;
+.nowrap input:optional {
+      border: 0;
 }
 
-h1 {
-    color: limegreen;
-    margin: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
+textarea {
+    border: 15px;
+    width: 90%;
+    height: 150px;
 }
 
-
-footer {
-    padding: 40px 20px; /*top px bottom px*/
-    background-color: black;
-    color: white;
-}   
-
-
-/* CLass Selector*/
-.post {
-    border-left: 4px solid #3abc49; /* places .post in the position you are desiring it to be*/
-    padding-left: 15px;
+fieldset {
     margin-bottom: 30px;
-    margin-right: 10px;  /*use this instead of margins*/
+    background-color: #DDD;
 }
 
-/* Multiple */
- h2 {       /*selector, selector*/
-   color:blueviolet;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 20px;
-   font-weight: normal;
-} 
-
-/* Descendants */
-
- nav ul {
-      display: flex;
-      flex-direction: row;
-  }
-
-  /*Flexbox items*/
-  
- nav li {
-    font-size: large; /* makes changes to the nav and li section */
-    font-weight: bold;
-    margin-right: 5px;
-    background-color: white;
-    padding: 3px;
-    flex-grow:1;
-    test-align: center;
-     }
-
-
- article p {
-    font-size: 15.5px;
-    text-align: justify;  /*you can use center also*/
-    margin-right: 20px;
- }   
-
- article h2 {
-     color: #3abc49;
- }
-
- article img {
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border: 3px solid gray;
-}
-
-/* Style a table*/
-table {
-    width: 100%;
-   /* border-collapse: collapse; you can use but I don't like the look */ 
-}
-th, td {
-    border: 1px solid red;
-    padding: 5px;
-    text-align: center;
-}
-
-th {
-    background-color: orange;
+input[type=submit] {
+     font-size: large;
+     width: 95%;
+     padding: 15px;
+     background-color: yellow;
+     margin-top: 35px;
 }
 
